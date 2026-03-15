@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Car } from '@/types/car';
 
-const BASE_URL = 'https://car-rental-api.goit.global'; 
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL; 
 
 export const api = axios.create({
   baseURL: BASE_URL,
