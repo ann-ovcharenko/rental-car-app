@@ -81,5 +81,5 @@
 
 ## 🔗 Посилання на проєкт
 
-- **Live Demo:** [Посиланя*на_Vercel*тут](https://your-project.vercel.app)
+- **Live Demo:** [Посиланя*на_Vercel*тут](https://rental-car-app-nu.vercel.app/)
 - **API Documentation:** [Swagger UI](https://car-rental-api.goit.global/api-docs/)
