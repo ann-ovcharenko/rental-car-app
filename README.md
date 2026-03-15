@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚗 RentalCar — Сервіс оренди автомобілів
 
-## Getting Started
+**RentalCar** — це сучасний веб-додаток для компанії, що займається наданням послуг з оренди автомобілів. Проєкт дозволяє користувачам переглядати каталог авто, фільтрувати їх за технічними характеристиками, додавати в "Обране" та бронювати онлайн.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Основні функції
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Каталог автомобілів:** Перегляд списку доступних авто з пагінацією (Load More).
+- **Детальна сторінка:** Повна інформація про кожен автомобіль (технічні характеристики, аксесуари, умови оренди).
+- **Фільтрація (Backend-based):** Пошук за брендом, ціною та пробігом.
+- **Система "Обране":** Можливість зберігати автомобілі. Список зберігається навіть після оновлення сторінки (Persistence).
+- **Форма бронювання:** Моментальне бронювання авто з миттєвим повідомленням про успіх (Notifications).
+- **Адаптивний дизайн:** Чиста верстка згідно з макетом у Figma.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Технологічний стек
 
-## Learn More
+- **Framework:** [Next.js 14+](https://nextjs.org/) (App Router)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **State Management:** [Zustand](https://zustand-demo.pmnd.rs/) (з використанням `persist` для LocalStorage)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **API Client:** [Axios](https://axios-http.com/)
+- **Notifications:** [React Hot Toast](https://react-hot-toast.com/)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Інструкція з установку та запуску
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  **Клонуйте репозиторій:**
 
-## Deploy on Vercel
+    ```bash
+    git clone [https://github.com/your-username/rental-car-project.git](https://github.com/your-username/rental-car-project.git)
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **Перейдіть у директорію проєкту:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+    cd rental-car-project
+    ```
+
+3.  **Встановіть залежності:**
+
+    ```bash
+    npm install
+    ```
+
+4.  **Запустіть проєкт у режимі розробки:**
+
+    ```bash
+    npm run dev
+    ```
+
+    Відкрийте [http://localhost:3000](http://localhost:3000) у браузері.
+
+5.  **Збірка для деплою (Production build):**
+    ```bash
+    npm run build
+    ```
+
+---
+
+## 📁 Структура проєкту (коротко)
+
+- `src/app` — маршрутизація та сторінки (Домашня, Каталог, Деталі).
+- `src/components` — перевикористовувані UI-компоненти (CarCard, FilterBar, BookingForm).
+- `src/store` — глобальний стан Zustand.
+- `src/services` — логіка запитів до API (Axios).
+
+---
+
+## 👤 Автор
+
+**Анна** \* [GitHub](https://github.com/ann-ovcharenko)
+
+- [LinkedIn](https://www.linkedin.com/in/anna-ovcharenko/)
+
+---
+
+## 🔗 Посилання на проєкт
+
+- **Live Demo:** [Посиланя*на_Vercel*тут](https://your-project.vercel.app)
+- **API Documentation:** [Swagger UI](https://car-rental-api.goit.global/api-docs/)
